@@ -30,7 +30,7 @@ body {
 }
 
 .navigation {
-  height: 3rem;
+  height: 5rem;
   margin-top: 1rem;
   display: flex;
   align-items: center;
@@ -50,30 +50,36 @@ body {
   list-style: none;
 }
 
-.present {
-  height: 50rem;
+.biodata {
+  height: 45rem;
   display: flex;
   align-items: center;
 }
 
-.present .box {
+.biodata .box {
   width: 30rem;
   margin-left: 10rem;
 }
 
-.present .box p {
+.biodata .box p {
   font-size: 1.3rem;
 }
 
-.present .box span {
+.biodata .box span {
   color: var(--secondary);
   font-weight: bold;
 }
 
-.present .box a {
+.biodata .box a {
   font-size: 1rem;
   color: var(--primary);
   text-decoration: none;
+}
+
+.biodata .box .link {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .photos {
@@ -82,4 +88,41 @@ body {
 
 .photos img {
   height: 25rem;
+}
+
+.skill {
+  height: 40rem;
+}
+
+.skill .skill-head {
+  height: 15rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill .images {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill .images img {
+  height: 18rem;
+}
+
+.project {
+  height: 45rem;
+}
+
+.project .project-head {
+  height: 10rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
