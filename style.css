@@ -5,7 +5,7 @@
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font: 1.1rem/2rem "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,113 +16,150 @@ body {
   background-color: var(--bg);
 }
 
-.header {
-  height: 7rem;
-  font-weight: 700;
-  font-size: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container {
+  margin: auto;
+  width: 60rem;
 }
 
-.header span {
+.header {
+  margin: 5rem 0 0 0;
+  text-align: center;
+}
+
+.header p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header p span {
   color: var(--secondary);
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .navigation {
-  height: 5rem;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  margin: 5rem 0 0 0;
+  text-align: center;
 }
 
 .navigation a {
-  width: 12rem;
-  padding: 1rem;
-  border: 0.15rem var(--primary) solid;
-  border-radius: 0.5rem;
   color: var(--primary);
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
+  border: 0.1rem solid var(--secondary);
+  padding: 0.5rem 2rem;
+  margin: 0 5rem;
+}
+
+.navigation a:hover {
+  color: var(--bg);
+  background-color: var(--secondary);
 }
 
 .biodata {
-  height: 45rem;
+  margin: 10rem 0 0 0;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .biodata .box {
   width: 30rem;
-  margin-left: 10rem;
 }
 
 .biodata .box p {
-  font-size: 1.3rem;
+  margin: 0.5rem 0;
 }
 
-.biodata .box span {
+.biodata .box p span {
   color: var(--secondary);
-  font-weight: bold;
-}
-
-.biodata .box a {
-  font-size: 1rem;
-  color: var(--primary);
-  text-decoration: none;
+  font-weight: 700;
 }
 
 .biodata .box .link {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
+  margin: 1.5rem 0 0;
 }
 
-.photos {
-  margin-left: 8rem;
+.biodata .box .link a {
+  color: var(--primary);
+  text-decoration: none;
+  margin: 0 4rem 0 0;
 }
 
-.photos img {
-  height: 25rem;
+.biodata .photos {
+  height: 20rem;
+  width: 20rem;
+  background-size: 20rem;
+  background-image: url(images/photos.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .skill {
-  height: 40rem;
+  margin: 15rem 0 0 0;
 }
 
 .skill .skill-head {
-  height: 15rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
-.skill .images {
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.skill .skill-head p {
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .skill .images img {
-  height: 18rem;
+  height: 10rem;
+  margin: 0 3rem 0 6rem;
+  border: 0.1rem dashed var(--secondary);
+}
+
+.skill .images img:hover {
+  border: 0.1rem dashed var(--primary);
 }
 
 .project {
-  height: 45rem;
+  height: 40rem;
+  margin: 15rem 0 0 0;
+  text-align: center;
 }
 
-.project .project-head {
+.project .project-head p {
   height: 10rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.project .project-1 {
+  margin: auto;
+  height: 17rem;
+  width: 30rem;
+  border: 0.1rem dashed var(--primary);
+}
+
+.project .project-1 img {
+  height: 15rem;
+  width: 29.9rem;
+}
+
+.project .project-1 p {
+  margin-top: -0.6rem;
+}
+
+.project .project-1:hover {
+  border: 0.1rem dashed var(--secondary);
+  color: var(--secondary);
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  font-weight: 700;
+}
+
+.footer p span {
+  color: var(--secondary);
+  font-weight: 700;
 }
